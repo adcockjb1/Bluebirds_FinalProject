@@ -7,7 +7,7 @@
 * Semester/Year: Fall 2024
 * Brief Description of the assignment: Using an ASP.NET website to solve a LeetCode problem in collaboration with a group using Git.
 
-* Brief Description of what this module does. This project uses git to work with teamates to solve hard LeetCode problems.
+* Brief Description of what this module does. This project uses git to work with teamates to solve hard LeetCode problems. This is the web for for the solution.
 * Citations: LeetCode, ChatGPT
 * Anything else that's relevant: Displays asp buttons and executes behind-code C# files when clicked.
 -->
