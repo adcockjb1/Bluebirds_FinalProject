@@ -1,18 +1,4 @@
-﻿<!--
-* Names: Joseph Adcock
-* emails: adcockjb@mail.uc.edu
-* Assignment: Final Project
-* Due Date: 12/10/24
-* Course #/Section: IS3050-001
-* Semester/Year: Fall 2024
-* Brief Description of the assignment: Using an ASP.NET website to solve a LeetCode problem in collaboration with a group using Git.
-
-* Brief Description of what this module does. This project uses git to work with teamates to solve hard LeetCode problems. This is the web for for the solution.
-* Citations: LeetCode, ChatGPT
-* Anything else that's relevant: Displays asp buttons and executes behind-code C# files when clicked.
--->
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Bluebirds_FinalProject.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Bluebirds_FinalProject.Index" %>
 
 <!DOCTYPE html>
 
@@ -95,9 +81,11 @@
     </div>
 
     <div>
-        <p>Question xx, solved by xxx</p>
+        <p>Question 273, solved by Peyton Bock</p>
     </div>
+        <div>
 
+        </div>
     <br/>
     <br/>
 

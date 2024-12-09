@@ -1,18 +1,4 @@
-﻿/*
-* Names: Joseph Adcock
-* emails: adcockjb @mail.uc.edu
-* Assignment: Final Project
-* Due Date: 12 / 10 / 24
-* Course #/Section: IS3050-001
-* Semester / Year: Fall 2024
-* Brief Description of the assignment: Using an ASP.NET website to solve a LeetCode problem in collaboration with a group using Git.
-
-* Brief Description of what this module does. This project uses git to work with teamates to solve hard LeetCode problems.
-* Citations: LeetCode, ChatGPT
-* Anything else that's relevant: Behind-code C# file for button click events.
-*/
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
