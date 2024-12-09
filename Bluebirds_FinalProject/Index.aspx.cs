@@ -68,4 +68,30 @@ namespace Bluebirds_FinalProject
             solvedBoard9.Text = "{" + string.Join(", ", exampleBoard[8]) + "}";
         }
     }
+    public partial class Index : System.Web.UI.Page
+    {
+        
+
+        protected void ProblemConvertToWords(object sender, EventArgs e)
+        {
+            // Get input
+            string input = peytonInput.Text;
+            int num;
+            if (int.TryParse(input, out num) && num >= 0)
+            {
+                // Solve using PeytonBockLeetCode
+                PeytonBockLeetCode solution = new PeytonBockLeetCode();
+                string words = solution.NumberToWords(num);
+
+                // Display result
+                peytonExplanation.Text = $"Input: {num}";
+                peytonSolution.Text = $"Output: {words}";
+            }
+            else
+            {
+                peytonExplanation.Text = "Invalid input! Please enter a non-negative integer.";
+                peytonSolution.Text = "";
+            }
+        }
+    }
 }

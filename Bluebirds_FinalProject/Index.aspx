@@ -83,7 +83,22 @@
     <div>
         <p>Question 273, solved by Peyton Bock</p>
     </div>
-        
+        <div>
+             <p>Question - Convert Integer to English Words, solved by Peyton Bock</p>
+        </div>
+        <div>
+            <p>Problem description: Convert a non-negative integer num to its English words representation.</p>
+        </div>
+        <div>
+            <asp:Label ID="peytonInputLabel" runat="server" Text="Enter a number:"></asp:Label>
+            <asp:TextBox ID="peytonInput" runat="server"></asp:TextBox>
+            <br />
+            <asp:Button ID="PeytonButton" runat="server" Text="Solve" OnClick="ProblemConvertToWords" />
+            <br />
+            <asp:Label ID="peytonExplanation" runat="server"></asp:Label>
+            <br />
+            <asp:Label ID="peytonSolution" runat="server"></asp:Label>
+        </div>
     <br/>
     <br/>
 
