@@ -83,9 +83,7 @@
     <div>
         <p>Question 273, solved by Peyton Bock</p>
     </div>
-        <div>
-
-        </div>
+        
     <br/>
     <br/>
 
