@@ -80,6 +80,7 @@
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="JoeAdcockLeetCode.cs" />
+    <Compile Include="OmarAlkhawagaLeetCode.cs" />
     <Compile Include="PeytonBockLeetCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
