@@ -1,18 +1,4 @@
-﻿/*
-* Names: Joseph Adcock
-* emails: adcockjb @mail.uc.edu
-* Assignment: Final Project
-* Due Date: 12 / 10 / 24
-* Course #/Section: IS3050-001
-* Semester / Year: Fall 2024
-* Brief Description of the assignment: Using an ASP.NET website to solve a LeetCode problem in collaboration with a group using Git.
-
-* Brief Description of what this module does. This project uses git to work with teamates to solve hard LeetCode problems.
-* Citations: LeetCode, ChatGPT
-* Anything else that's relevant: Behind-code C# file for button click events.
-*/
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -80,6 +66,32 @@ namespace Bluebirds_FinalProject
             solvedBoard7.Text = "{" + string.Join(", ", exampleBoard[6]) + "}";
             solvedBoard8.Text = "{" + string.Join(", ", exampleBoard[7]) + "}";
             solvedBoard9.Text = "{" + string.Join(", ", exampleBoard[8]) + "}";
+        }
+    }
+    public partial class Index : System.Web.UI.Page
+    {
+        
+
+        protected void ProblemConvertToWords(object sender, EventArgs e)
+        {
+            // Get input
+            string input = peytonInput.Text;
+            int num;
+            if (int.TryParse(input, out num) && num >= 0)
+            {
+                // Solve using PeytonBockLeetCode
+                PeytonBockLeetCode solution = new PeytonBockLeetCode();
+                string words = solution.NumberToWords(num);
+
+                // Display result
+                peytonExplanation.Text = $"Input: {num}";
+                peytonSolution.Text = $"Output: {words}";
+            }
+            else
+            {
+                peytonExplanation.Text = "Invalid input! Please enter a non-negative integer.";
+                peytonSolution.Text = "";
+            }
         }
     }
 }
