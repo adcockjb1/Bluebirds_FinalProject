@@ -103,12 +103,17 @@
     <br/>
 
     <div>
-            <p>Question xx, solved by xxx</p>
+    <p>Question 773, solved by Evan Bolin</p>
+</div>
+      <div>
+                <asp:Button ID="LeetCode773Button" runat="server" Text="Solve Problem 773" OnClick="SolveLeetCode773" />
+            <br />
+            <asp:Label ID="problemDescription" runat="server"></asp:Label>
+            <br />
+            <asp:Label ID="exampleBoardLabel" runat="server"></asp:Label>
+            <br />
+            <asp:Label ID="solutionLabel" runat="server"></asp:Label>
         </div>
-
-    <br/>
-    <br/>
-
     <div>
         <p>Question xx, solved by xxx</p>
     </div>
