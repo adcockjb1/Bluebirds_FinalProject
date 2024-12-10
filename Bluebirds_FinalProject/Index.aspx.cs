@@ -68,8 +68,33 @@ namespace Bluebirds_FinalProject
             solvedBoard9.Text = "{" + string.Join(", ", exampleBoard[8]) + "}";
         }
 
-        
+        protected System.Void OmarButton_Click(System.Object sender, System.EventArgs e)
+        {
+            OmarProblem1.Text = "There are n children standing in a line.";
+            OmarProblem2.Text = "Each child is assigned a rating value given in the integer array ratings.";
+            OmarProblem3.Text = "You are giving candies to these children subjected to the following requirements:.";
+            OmarProblem4.Text = "-Each child must have at least one candy.";
+            OmarProblem5.Text = "-Children with a higher rating get more candies than their neighbors..";
+            OmarProblem6.Text = "Return the minimum number of candies you need to have to distribute the candies to the children.";
+
+            OmarTestCase1.Text = "Here is the test case of the candy problem:";
+            OmarTestCase2.Text = "Input: ratings = [1,0,2]";
+            OmarTestCase3.Text = "Output: 5";
+            OmarTestCase4.Text = "Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.";
+
+            OmarTestResults1.Text = "Here is the test result of problem 135:";
+            int[] testRatings = { 1, 0, 2 };
+            OmarAlkhawagaLeetCode calculator = new OmarAlkhawagaLeetCode();
+            int result = calculator.Candy(testRatings);
+
+
+            OmarTestResults1.Text = $"Here is the test result of problem 135: {result}";
+
+        }
+
+
     }
+}
     public partial class Index : System.Web.UI.Page
     {
 

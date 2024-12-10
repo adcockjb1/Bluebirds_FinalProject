@@ -115,8 +115,42 @@
             <asp:Label ID="solutionLabel" runat="server"></asp:Label>
         </div>
     <div>
-        <p>Question xx, solved by xxx</p>
-    </div>
+       
+            <p>Question 135, solved by Omar Alkhawaga</p>
+        <p> <asp:Button ID="OmarButton" runat="server" Text="Solve" OnClick="OmarButton_Click" /></p>
+        </div>
+
+    <br/>
+         <div/>
+     <asp:Label ID="OmarProblem1" runat="server"></asp:Label>
+ <br/>
+     <asp:Label ID="OmarProblem2" runat="server"></asp:Label>
+ <br/>
+     <asp:Label ID="OmarProblem3" runat="server"></asp:Label>
+ <br/>
+     <asp:Label ID="OmarProblem4" runat="server"></asp:Label>
+ <br/>
+     <asp:Label ID="OmarProblem5" runat="server"></asp:Label>
+ <br/>
+     <asp:Label ID="OmarProblem6" runat="server"></asp:Label>
+ <br/>
+        <br />
+        
+         <asp:Label ID="OmarTestCase1" runat="server"></asp:Label>
+        <br/>
+        <asp:Label ID="OmarTestCase2" runat="server"></asp:Label>
+        <br/>
+         <asp:Label ID="OmarTestCase3" runat="server"></asp:Label>
+    <br/>
+            
+     <asp:Label ID="OmarTestCase4" runat="server"></asp:Label>
+<br/>
+        <br />
+         <asp:Label ID="OmarTestResults1" runat="server"></asp:Label>
+<br/>
+
+
+   
 
     <br/>
     <br/>
