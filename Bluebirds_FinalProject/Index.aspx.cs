@@ -67,10 +67,12 @@ namespace Bluebirds_FinalProject
             solvedBoard8.Text = "{" + string.Join(", ", exampleBoard[7]) + "}";
             solvedBoard9.Text = "{" + string.Join(", ", exampleBoard[8]) + "}";
         }
+
+        
     }
     public partial class Index : System.Web.UI.Page
     {
-        
+
 
         protected void ProblemConvertToWords(object sender, EventArgs e)
         {
@@ -91,6 +93,34 @@ namespace Bluebirds_FinalProject
             {
                 peytonExplanation.Text = "Invalid input! Please enter a non-negative integer.";
                 peytonSolution.Text = "";
+            }
+        }
+        protected void SolveLeetCode773(object sender, EventArgs e)
+        {
+            // Problem description
+            problemDescription.Text = "LeetCode Problem 773: On a 2x3 board, there are five tiles labeled from 1 to 5, and an empty square represented by 0. A move consists of choosing 0 and a 4-directionally adjacent number and swapping it.\n\nThe goal is to reach the state [[1,2,3],[4,5,0]].";
+
+            // Example board
+            int[][] exampleBoard = new int[][]
+            {
+                new int[] { 1, 2, 3 },
+                new int[] { 4, 0, 5 }
+            };
+
+            // Display example board
+            exampleBoardLabel.Text = "Example Board: [[1, 2, 3], [4, 0, 5]]";
+            // Solve the puzzle using EvanBolinLeetCode class
+            EvanBolinLeetCode solution = new EvanBolinLeetCode();
+            int result = solution.SlidingPuzzle(exampleBoard);
+
+            // Display solution
+            if (result == -1)
+            {
+                solutionLabel.Text = "It is impossible to solve the puzzle.";
+            }
+            else
+            {
+                solutionLabel.Text = $"Number of moves required: {result}";
             }
         }
     }
